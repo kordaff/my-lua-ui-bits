@@ -1,4 +1,5 @@
-Entry = { visible=false,textcolor={1,1,1,1},focus=false,font="",tmptext="type in here",text=" " } 
+Entry = { visible=false,textcolor={1,1,1,1},focus=false,font="",tmptext="type in here",
+  text=" ",xpad=2, ypad=2 } 
 
 function Entry:new (o)
   o = o or {}
