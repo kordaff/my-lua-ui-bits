@@ -1,7 +1,4 @@
-local uppercase={a="A", b="B", c="C", d="D",e="E",f="F",g="G"}
-
-Entry = {visible=false,textcolor={1,1,1,1},focus=false,xpad=2,ypad=2,font="",
-  tmptext="type in here",text=" ",shifton=true } 
+Entry = { visible=false,textcolor={1,1,1,1},focus=false,font="",tmptext="type in here",text=" " } 
 
 function Entry:new (o)
   o = o or {}
