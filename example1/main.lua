@@ -1,4 +1,10 @@
-require "entry"   require "button"
+-- This example copies the entry text into the button when enter/return is pressed
+-- using love.textinput alleviates the need for keeping track of when a shift button
+--   is pressed and translating the keys to shifted version in the entry widget.
+
+require "entry"   
+require "button"
+
 function love.load()
   font = love.graphics.newFont("Montserrat-Regular.ttf", 36)
   b2 = Button:new( {x=15,y=250,name="---",font=font,visible=true } )
