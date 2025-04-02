@@ -8,7 +8,6 @@ function Entry:new (o)
 end
 
 function Entry:fn (v)
-  print ("rcvd: ",v)
   self.text=""
 end
 
