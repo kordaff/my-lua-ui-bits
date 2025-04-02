@@ -11,5 +11,4 @@ end
 
 function love.keypressed(key, scancode, isrepeat)
   if key == "escape" then love.event.quit() end
-  e:keypressed(key)
 end
