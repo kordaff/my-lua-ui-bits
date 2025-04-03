@@ -5,13 +5,14 @@ local splashtext=""
 local count=0
 
 function love.load()
-  font = love.graphics.newFont("Montserrat-Regular.ttf", 36)
-  e = Entry:new({font=font,text="",x=15,y=80,xpad=10,ypad=10,visible=true,focus=true})
+  love.keyboard.setTextInput( true )
+  font = love.graphics.newFont("Montserrat-Regular.ttf", 24)
+  e = Entry:new({font=font,text="",x=15,y=30,xpad=10,ypad=10,visible=true,focus=true})
   e.fn=function() 
     splash=true
-    splashtext=e.text
+    splashtext="function e.fn() rcvd: "..e.text
     e.text=""
-    count=30
+    count=90
   end
 end
 
@@ -25,7 +26,7 @@ end
 function love.draw()
   e:draw()
   if splash then
-    love.graphics.print(splashtext,300,300)
+    love.graphics.print(splashtext,300,35) -- 35 to match 30+ypad/2 in entry.lua
   end
 end
 
